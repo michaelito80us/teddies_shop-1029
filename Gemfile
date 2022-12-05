@@ -3,6 +3,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "3.1.1"
 
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4"
 
@@ -64,3 +65,11 @@ group :development do
   # gem "spring"
 end
 
+
+gem "money-rails", "~> 1.15"
+
+gem "wx_pay", "~> 0.21.0"
+
+gem "rqrcode", "~> 2.1"
+
+gem "rexml", "~> 3.2"

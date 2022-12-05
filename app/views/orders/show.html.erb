@@ -1,0 +1,8 @@
+<div class="container d-flex flex-column align-items-center">
+  <h1>Order</h1>
+  <ul>
+    <li>Status: <%= link_to_unless @order.state == 'paid', @order.state, order_payment_path(@order) %></li>
+    <li>Item: <%= @order.teddy_sku %></li>
+    <li>Amount: <%= humanized_money_with_symbol(@order.amount) %></li>
+  <ul>
+</div>

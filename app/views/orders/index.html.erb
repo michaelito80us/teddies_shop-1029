@@ -1,0 +1,10 @@
+<div class="container d-flex flex-column align-items-center">
+  <h1>Orders</h1>
+  <div class="flex">
+    <% @orders.each do |order| %>
+      <p><%= order.teddy_sku %> - <%= order.state %></p>
+    <% end %>
+  </div>
+
+
+</div>

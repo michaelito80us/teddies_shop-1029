@@ -1,0 +1,12 @@
+<div class="container d-flex flex-column align-items-center">
+  <h1>Purchase of teddy <%= @order.teddy_sku %></h1>
+  <%= form_with url: order_payment_path(@order) do %>
+    <article>
+      <label class="amount">
+        <span>Amount: <%= humanized_money_with_symbol(@order.amount) %></span>
+      </label>
+    </article>
+  <% end %>
+
+  <%= @qr.html_safe %>
+</div>
